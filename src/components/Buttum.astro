@@ -1,0 +1,37 @@
+---
+const {text} = Astro.props;
+---
+<html> 
+<div class="button-container">
+  <button class="custom-button">{text}</button>
+</div>
+</html>
+
+<style>
+.button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.custom-button {
+  border: 1px solid #ab0000; 
+  background-color: transparent; 
+  color: #ab0000; 
+  padding: 10px 50px; 
+  font-size: 16px; 
+   font-family: "Noto Sans Mono", serif;
+  font-optical-sizing: auto;
+font-weight: bolder;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+ 
+}
+
+.custom-button:hover {
+  background-color: #ab0000;
+  color: #FBF8F1; 
+}
+</style>
+

@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Buttum from "../components/Buttum.astro";
 ---
 
 <MainLayout metatitle="GALLERY">
@@ -8,15 +9,30 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <div class="gallery_box">
   <div class="gallery_img"><img src="/public/bilder/slide2.webp" alt="gallery_img"></div>
-  <div class="gallery_text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi aperiam, distinctio et officiis, rem quae inventore mollitia ipsum reprehenderit adipisci illum dolore quod consequatur sed. Saepe possimus animi beatae.
-Deleniti ipsum voluptas aspernatur quo est sequi voluptatem, impedit iure. Nisi dolores rerum accusantium, impedit maiores ad iste ipsum nulla totam debitis nihil distinctio ut, voluptates, dolorem veniam a laudantium?
-Quaerat architecto earum modi dolore autem dolores quas, labore nulla rem molestias accusantium consequuntur saepe placeat. Illo repudiandae veritatis voluptatem tempora amet nobis nostrum, quis necessitatibus, ipsum, quasi voluptatibus perspiciatis.</p></div>
+  <div class="gallery_text1"><p>When you enter Panache, you will be welcomed into a space where creativity knows no rules and every corner tells a story. <br> <br>
+    Here, art isn’t just something you see; it’s something you feel, question, and celebrate. Whether you’re a seasoned art enthusiast or someone who just loves discovering something beautiful, our exhibitions are curated to spark your curiosity and ignite conversation. <br> <br>
+
+So take a stroll, sip on a glass of wine, and let yourself get lost in the vibe. This isn’t just a gallery; it’s where inspiration and individuality collide. Enjoy the journey!
+<br><br>
+Are you an artist? <br><br>
+Send us an email if you're interested in showcasing your art in our bar for our guests to see and buy! We'd love to have a chat and see your amazing art!
+
+<br>
+<br>
+<a href="/shop">
+<Buttum text="SEND MAIL"/> </a>
+</div>
   </div>
 
- <div class="gallery_heading2"><h1>OVERSKRIFT</h1></div>
+
+ <div class="gallery_heading2"><h1>WHERE EVERY WALLS TELLS A STORY</h1></div>
    <div class="line"></div>
 
-     <div class="gallery_text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestias error voluptatum doloremque nobis aliquam iure, hic rerum exercitationem, animi eligendi veritatis, quod ducimus aperiam nostrum sint explicabo optio totam.</p></div>
+     <div class="gallery_text2"><p>Our exhibitions are ever-changing, featuring works from both emerging and established artists, each bringing their own flair to the space. <br> <br> 
+      It’s not just about looking—it’s about connecting. Maybe a piece will spark a memory, inspire a new idea, or challenge the way you see the world.
+
+So take a stroll, sip on a glass of wine, and let yourself get lost in the vibe. <br>
+This isn’t just a gallery; it’s where inspiration and individuality collide. Enjoy the journey!</p></div>
 
  <div class="slideshow">
         <div id="slider">
@@ -43,6 +59,7 @@ Quaerat architecto earum modi dolore autem dolores quas, labore nulla rem molest
   @media (max-width: 800px){
 .gallery_heading1{
   text-align: center;
+
 }
 .gallery_heading2{
   text-align: center;
@@ -54,13 +71,21 @@ Quaerat architecto earum modi dolore autem dolores quas, labore nulla rem molest
    background-color: black; 
    margin: 20px auto; 
 }
-.gallery_heading{
-  text-align: center;
-  
-}
 .gallery_box{
 margin: 8%;
 }
+
+.gallery_text2{
+ margin: 8%;
+}
+
+.knap_test{
+  text-align: center;
+  padding-top: 5%;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
 .line {
    width: 70%; 
    height: 1px; 
@@ -72,7 +97,12 @@ margin: 8%;
 @media (min-width: 800px){
   .gallery_heading1{
   text-align: center;
- 
+}
+.line {
+   width: 70%; 
+   height: 1px; 
+   background-color: black; 
+   margin: 20px auto; 
 }
 .gallery_heading2{
   text-align: center;
@@ -82,6 +112,17 @@ margin: 8%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  margin: 5%;
+}
+.gallery_text1{
+  padding-left: 6%;
+}
+.button_test{
+padding-top: 2%;
+
+}
+.gallery_text2{
+  margin: 5%;
 }
 }
 
